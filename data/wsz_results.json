@@ -1,0 +1,2002 @@
+{
+ "meta": {
+  "stand": "2026-10-24",
+  "erzeuger_hash": "eff76f3d41ab79d1",
+  "seeds": [
+   11,
+   12,
+   13,
+   14
+  ],
+  "quellen": [
+   "wsz_rng.py",
+   "wsz_scenario.py",
+   "wsz_geomed.py",
+   "wsz_equivariance.py",
+   "wsz_highdim.py",
+   "wsz_experiments.py",
+   "tools/make_results.py"
+  ]
+ },
+ "m1": {
+  "raster": [
+   {
+    "layout": "Normal",
+    "weights": "gleich",
+    "n": 3,
+    "mean": 0.43243750000000003,
+    "std": 0.0038420982223259137,
+    "per_seed": [
+     0.4325,
+     0.4315,
+     0.4275,
+     0.43825
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Normal",
+    "weights": "gleich",
+    "n": 5,
+    "mean": 0.26475,
+    "std": 0.005755432216610674,
+    "per_seed": [
+     0.26675,
+     0.27075,
+     0.25525,
+     0.26625
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Normal",
+    "weights": "gleich",
+    "n": 10,
+    "mean": 0.1283125,
+    "std": 0.007011987503554182,
+    "per_seed": [
+     0.13,
+     0.13,
+     0.13625,
+     0.117
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Normal",
+    "weights": "gleich",
+    "n": 20,
+    "mean": 0.0678125,
+    "std": 0.0040902895679890425,
+    "per_seed": [
+     0.074,
+     0.06725,
+     0.0675,
+     0.0625
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Normal",
+    "weights": "gleich",
+    "n": 30,
+    "mean": 0.042,
+    "std": 0.002091650066335188,
+    "per_seed": [
+     0.04,
+     0.0455,
+     0.041,
+     0.0415
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Normal",
+    "weights": "gleich",
+    "n": 50,
+    "mean": 0.021500000000000002,
+    "std": 0.004500000000000001,
+    "per_seed": [
+     0.018,
+     0.029,
+     0.018,
+     0.021
+    ],
+    "runs_per_seed": 1000
+   },
+   {
+    "layout": "Normal",
+    "weights": "gleich",
+    "n": 100,
+    "mean": 0.01625,
+    "std": 0.00414578098794425,
+    "per_seed": [
+     0.01,
+     0.015,
+     0.02,
+     0.02
+    ],
+    "runs_per_seed": 400
+   },
+   {
+    "layout": "Normal",
+    "weights": "lognormal 0,5",
+    "n": 3,
+    "mean": 0.6738125,
+    "std": 0.005778124154948557,
+    "per_seed": [
+     0.68225,
+     0.67275,
+     0.67425,
+     0.666
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Normal",
+    "weights": "lognormal 0,5",
+    "n": 5,
+    "mean": 0.3774375,
+    "std": 0.005374636615623422,
+    "per_seed": [
+     0.3825,
+     0.37325,
+     0.371,
+     0.383
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Normal",
+    "weights": "lognormal 0,5",
+    "n": 10,
+    "mean": 0.1764375,
+    "std": 0.004020941276616701,
+    "per_seed": [
+     0.1755,
+     0.17025,
+     0.17975,
+     0.18025
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Normal",
+    "weights": "lognormal 0,5",
+    "n": 20,
+    "mean": 0.0869375,
+    "std": 0.0030790369841883964,
+    "per_seed": [
+     0.09025,
+     0.0835,
+     0.08975,
+     0.08425
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Normal",
+    "weights": "lognormal 0,5",
+    "n": 30,
+    "mean": 0.0539375,
+    "std": 0.0007781187248742965,
+    "per_seed": [
+     0.05275,
+     0.0545,
+     0.05375,
+     0.05475
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Normal",
+    "weights": "lognormal 0,5",
+    "n": 50,
+    "mean": 0.0315,
+    "std": 0.005315072906367325,
+    "per_seed": [
+     0.027,
+     0.032,
+     0.04,
+     0.027
+    ],
+    "runs_per_seed": 1000
+   },
+   {
+    "layout": "Normal",
+    "weights": "lognormal 0,5",
+    "n": 100,
+    "mean": 0.01875,
+    "std": 0.005448623679425842,
+    "per_seed": [
+     0.0125,
+     0.0175,
+     0.0175,
+     0.0275
+    ],
+    "runs_per_seed": 400
+   },
+   {
+    "layout": "Normal",
+    "weights": "lognormal 1",
+    "n": 3,
+    "mean": 0.86275,
+    "std": 0.003996091840786437,
+    "per_seed": [
+     0.85875,
+     0.859,
+     0.868,
+     0.86525
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Normal",
+    "weights": "lognormal 1",
+    "n": 5,
+    "mean": 0.6398125,
+    "std": 0.00512156897346898,
+    "per_seed": [
+     0.6455,
+     0.64125,
+     0.6315,
+     0.641
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Normal",
+    "weights": "lognormal 1",
+    "n": 10,
+    "mean": 0.36212500000000003,
+    "std": 0.004292071178347353,
+    "per_seed": [
+     0.35475,
+     0.36375,
+     0.36525,
+     0.36475
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Normal",
+    "weights": "lognormal 1",
+    "n": 20,
+    "mean": 0.1798125,
+    "std": 0.003615828916030185,
+    "per_seed": [
+     0.17525,
+     0.18475,
+     0.1815,
+     0.17775
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Normal",
+    "weights": "lognormal 1",
+    "n": 30,
+    "mean": 0.1196875,
+    "std": 0.0036715757856811255,
+    "per_seed": [
+     0.116,
+     0.1245,
+     0.122,
+     0.11625
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Normal",
+    "weights": "lognormal 1",
+    "n": 50,
+    "mean": 0.069,
+    "std": 0.00812403840463596,
+    "per_seed": [
+     0.063,
+     0.059,
+     0.077,
+     0.077
+    ],
+    "runs_per_seed": 1000
+   },
+   {
+    "layout": "Normal",
+    "weights": "lognormal 1",
+    "n": 100,
+    "mean": 0.039375,
+    "std": 0.005412658773652742,
+    "per_seed": [
+     0.0325,
+     0.0475,
+     0.04,
+     0.0375
+    ],
+    "runs_per_seed": 400
+   },
+   {
+    "layout": "Quadrat",
+    "weights": "gleich",
+    "n": 3,
+    "mean": 0.40112500000000006,
+    "std": 0.007429880550856787,
+    "per_seed": [
+     0.396,
+     0.3955,
+     0.41375,
+     0.39925
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Quadrat",
+    "weights": "gleich",
+    "n": 5,
+    "mean": 0.2210625,
+    "std": 0.006940314744303754,
+    "per_seed": [
+     0.21925,
+     0.21275,
+     0.22025,
+     0.232
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Quadrat",
+    "weights": "gleich",
+    "n": 10,
+    "mean": 0.10874999999999999,
+    "std": 0.00649759570918351,
+    "per_seed": [
+     0.099,
+     0.10875,
+     0.11725,
+     0.11
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Quadrat",
+    "weights": "gleich",
+    "n": 20,
+    "mean": 0.055374999999999994,
+    "std": 0.0021614520582238215,
+    "per_seed": [
+     0.059,
+     0.0535,
+     0.055,
+     0.054
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Quadrat",
+    "weights": "gleich",
+    "n": 30,
+    "mean": 0.0316875,
+    "std": 0.0014183507147387784,
+    "per_seed": [
+     0.03175,
+     0.0315,
+     0.02975,
+     0.03375
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Quadrat",
+    "weights": "gleich",
+    "n": 50,
+    "mean": 0.02,
+    "std": 0.0035355339059327372,
+    "per_seed": [
+     0.019,
+     0.017,
+     0.026,
+     0.018
+    ],
+    "runs_per_seed": 1000
+   },
+   {
+    "layout": "Quadrat",
+    "weights": "gleich",
+    "n": 100,
+    "mean": 0.008125,
+    "std": 0.0020728904939721253,
+    "per_seed": [
+     0.0075,
+     0.01,
+     0.01,
+     0.005
+    ],
+    "runs_per_seed": 400
+   },
+   {
+    "layout": "Quadrat",
+    "weights": "lognormal 0,5",
+    "n": 3,
+    "mean": 0.6500625,
+    "std": 0.006664680693776713,
+    "per_seed": [
+     0.63875,
+     0.652,
+     0.65375,
+     0.65575
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Quadrat",
+    "weights": "lognormal 0,5",
+    "n": 5,
+    "mean": 0.33756250000000004,
+    "std": 0.002094449510014513,
+    "per_seed": [
+     0.3375,
+     0.341,
+     0.33575,
+     0.336
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Quadrat",
+    "weights": "lognormal 0,5",
+    "n": 10,
+    "mean": 0.14581249999999998,
+    "std": 0.0036758289881331564,
+    "per_seed": [
+     0.142,
+     0.15175,
+     0.14375,
+     0.14575
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Quadrat",
+    "weights": "lognormal 0,5",
+    "n": 20,
+    "mean": 0.06825,
+    "std": 0.004107919181288744,
+    "per_seed": [
+     0.07225,
+     0.06775,
+     0.07125,
+     0.06175
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Quadrat",
+    "weights": "lognormal 0,5",
+    "n": 30,
+    "mean": 0.044437500000000005,
+    "std": 0.004594068866484265,
+    "per_seed": [
+     0.038,
+     0.04575,
+     0.04325,
+     0.05075
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Quadrat",
+    "weights": "lognormal 0,5",
+    "n": 50,
+    "mean": 0.02625,
+    "std": 0.0024874685927665494,
+    "per_seed": [
+     0.026,
+     0.023,
+     0.026,
+     0.03
+    ],
+    "runs_per_seed": 1000
+   },
+   {
+    "layout": "Quadrat",
+    "weights": "lognormal 0,5",
+    "n": 100,
+    "mean": 0.010624999999999999,
+    "std": 0.003247595264191645,
+    "per_seed": [
+     0.015,
+     0.0075,
+     0.0075,
+     0.0125
+    ],
+    "runs_per_seed": 400
+   },
+   {
+    "layout": "Quadrat",
+    "weights": "lognormal 1",
+    "n": 3,
+    "mean": 0.8610625,
+    "std": 0.0015142551799482036,
+    "per_seed": [
+     0.86075,
+     0.859,
+     0.86125,
+     0.86325
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Quadrat",
+    "weights": "lognormal 1",
+    "n": 5,
+    "mean": 0.628375,
+    "std": 0.011880261992060628,
+    "per_seed": [
+     0.612,
+     0.636,
+     0.62275,
+     0.64275
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Quadrat",
+    "weights": "lognormal 1",
+    "n": 10,
+    "mean": 0.33462500000000006,
+    "std": 0.004678741818053236,
+    "per_seed": [
+     0.3385,
+     0.33775,
+     0.32675,
+     0.3355
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Quadrat",
+    "weights": "lognormal 1",
+    "n": 20,
+    "mean": 0.15962500000000002,
+    "std": 0.0077510079989637545,
+    "per_seed": [
+     0.16225,
+     0.1555,
+     0.15,
+     0.17075
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Quadrat",
+    "weights": "lognormal 1",
+    "n": 30,
+    "mean": 0.10162500000000001,
+    "std": 0.005920040118107308,
+    "per_seed": [
+     0.09725,
+     0.09975,
+     0.11175,
+     0.09775
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Quadrat",
+    "weights": "lognormal 1",
+    "n": 50,
+    "mean": 0.0635,
+    "std": 0.002692582403567254,
+    "per_seed": [
+     0.06,
+     0.065,
+     0.062,
+     0.067
+    ],
+    "runs_per_seed": 1000
+   },
+   {
+    "layout": "Quadrat",
+    "weights": "lognormal 1",
+    "n": 100,
+    "mean": 0.035625,
+    "std": 0.006218671481916374,
+    "per_seed": [
+     0.04,
+     0.04,
+     0.0375,
+     0.025
+    ],
+    "runs_per_seed": 400
+   },
+   {
+    "layout": "Kern + Außenposten",
+    "weights": "gleich",
+    "n": 3,
+    "mean": 0.6153125,
+    "std": 0.010262758827430357,
+    "per_seed": [
+     0.611,
+     0.62225,
+     0.60075,
+     0.62725
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Kern + Außenposten",
+    "weights": "gleich",
+    "n": 5,
+    "mean": 0.323125,
+    "std": 0.004102209770355489,
+    "per_seed": [
+     0.324,
+     0.32875,
+     0.31725,
+     0.3225
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Kern + Außenposten",
+    "weights": "gleich",
+    "n": 10,
+    "mean": 0.1395625,
+    "std": 0.0025882849051060736,
+    "per_seed": [
+     0.1435,
+     0.1395,
+     0.13625,
+     0.139
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Kern + Außenposten",
+    "weights": "gleich",
+    "n": 20,
+    "mean": 0.0635625,
+    "std": 0.0023543510252296727,
+    "per_seed": [
+     0.0625,
+     0.06625,
+     0.06525,
+     0.06025
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Kern + Außenposten",
+    "weights": "gleich",
+    "n": 30,
+    "mean": 0.043187500000000004,
+    "std": 0.003541605391626797,
+    "per_seed": [
+     0.0485,
+     0.04425,
+     0.0405,
+     0.0395
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Kern + Außenposten",
+    "weights": "gleich",
+    "n": 50,
+    "mean": 0.02475,
+    "std": 0.005539629951540085,
+    "per_seed": [
+     0.021,
+     0.032,
+     0.028,
+     0.018
+    ],
+    "runs_per_seed": 1000
+   },
+   {
+    "layout": "Kern + Außenposten",
+    "weights": "gleich",
+    "n": 100,
+    "mean": 0.011875000000000002,
+    "std": 0.005412658773652742,
+    "per_seed": [
+     0.005,
+     0.0125,
+     0.02,
+     0.01
+    ],
+    "runs_per_seed": 400
+   },
+   {
+    "layout": "Kern + Außenposten",
+    "weights": "lognormal 0,5",
+    "n": 3,
+    "mean": 0.7466875000000001,
+    "std": 0.004654886545341325,
+    "per_seed": [
+     0.74775,
+     0.747,
+     0.7525,
+     0.7395
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Kern + Außenposten",
+    "weights": "lognormal 0,5",
+    "n": 5,
+    "mean": 0.4509375,
+    "std": 0.004767648136135885,
+    "per_seed": [
+     0.44775,
+     0.4465,
+     0.45875,
+     0.45075
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Kern + Außenposten",
+    "weights": "lognormal 0,5",
+    "n": 10,
+    "mean": 0.18781250000000002,
+    "std": 0.004143424760991809,
+    "per_seed": [
+     0.191,
+     0.19275,
+     0.183,
+     0.1845
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Kern + Außenposten",
+    "weights": "lognormal 0,5",
+    "n": 20,
+    "mean": 0.0885,
+    "std": 0.0034999999999999996,
+    "per_seed": [
+     0.094,
+     0.085,
+     0.086,
+     0.089
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Kern + Außenposten",
+    "weights": "lognormal 0,5",
+    "n": 30,
+    "mean": 0.0603125,
+    "std": 0.005121568973468971,
+    "per_seed": [
+     0.0685,
+     0.0565,
+     0.06075,
+     0.0555
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Kern + Außenposten",
+    "weights": "lognormal 0,5",
+    "n": 50,
+    "mean": 0.037,
+    "std": 0.0012247448713915874,
+    "per_seed": [
+     0.037,
+     0.038,
+     0.038,
+     0.035
+    ],
+    "runs_per_seed": 1000
+   },
+   {
+    "layout": "Kern + Außenposten",
+    "weights": "lognormal 0,5",
+    "n": 100,
+    "mean": 0.015625,
+    "std": 0.00480071609241788,
+    "per_seed": [
+     0.01,
+     0.0175,
+     0.0125,
+     0.0225
+    ],
+    "runs_per_seed": 400
+   },
+   {
+    "layout": "Kern + Außenposten",
+    "weights": "lognormal 1",
+    "n": 3,
+    "mean": 0.8903125000000001,
+    "std": 0.0032131322335067552,
+    "per_seed": [
+     0.89375,
+     0.89225,
+     0.88525,
+     0.89
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Kern + Außenposten",
+    "weights": "lognormal 1",
+    "n": 5,
+    "mean": 0.6880625,
+    "std": 0.0013506364240608662,
+    "per_seed": [
+     0.6865,
+     0.689,
+     0.68975,
+     0.687
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Kern + Außenposten",
+    "weights": "lognormal 1",
+    "n": 10,
+    "mean": 0.3844375,
+    "std": 0.007802994216965696,
+    "per_seed": [
+     0.38525,
+     0.3895,
+     0.3715,
+     0.3915
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Kern + Außenposten",
+    "weights": "lognormal 1",
+    "n": 20,
+    "mean": 0.1939375,
+    "std": 0.004116942888843618,
+    "per_seed": [
+     0.188,
+     0.1995,
+     0.195,
+     0.19325
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Kern + Außenposten",
+    "weights": "lognormal 1",
+    "n": 30,
+    "mean": 0.12587500000000001,
+    "std": 0.00412878614122844,
+    "per_seed": [
+     0.131,
+     0.1195,
+     0.126,
+     0.127
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Kern + Außenposten",
+    "weights": "lognormal 1",
+    "n": 50,
+    "mean": 0.0785,
+    "std": 0.004153311931459042,
+    "per_seed": [
+     0.076,
+     0.083,
+     0.073,
+     0.082
+    ],
+    "runs_per_seed": 1000
+   },
+   {
+    "layout": "Kern + Außenposten",
+    "weights": "lognormal 1",
+    "n": 100,
+    "mean": 0.02875,
+    "std": 0.0073950997288745185,
+    "per_seed": [
+     0.0375,
+     0.0325,
+     0.0175,
+     0.0275
+    ],
+    "runs_per_seed": 400
+   },
+   {
+    "layout": "Kern + Seitengruppe",
+    "weights": "gleich",
+    "n": 3,
+    "mean": 0.538,
+    "std": 0.008319780646146841,
+    "per_seed": [
+     0.524,
+     0.54475,
+     0.5395,
+     0.54375
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Kern + Seitengruppe",
+    "weights": "gleich",
+    "n": 5,
+    "mean": 0.303625,
+    "std": 0.005990878483160896,
+    "per_seed": [
+     0.31025,
+     0.294,
+     0.30625,
+     0.304
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Kern + Seitengruppe",
+    "weights": "gleich",
+    "n": 10,
+    "mean": 0.14556249999999998,
+    "std": 0.002508579030048687,
+    "per_seed": [
+     0.1415,
+     0.14575,
+     0.14675,
+     0.14825
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Kern + Seitengruppe",
+    "weights": "gleich",
+    "n": 20,
+    "mean": 0.074625,
+    "std": 0.006496393230093143,
+    "per_seed": [
+     0.0845,
+     0.07375,
+     0.06625,
+     0.074
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Kern + Seitengruppe",
+    "weights": "gleich",
+    "n": 30,
+    "mean": 0.0505,
+    "std": 0.005003124024047376,
+    "per_seed": [
+     0.04675,
+     0.05825,
+     0.0515,
+     0.0455
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Kern + Seitengruppe",
+    "weights": "gleich",
+    "n": 50,
+    "mean": 0.0315,
+    "std": 0.004153311931459037,
+    "per_seed": [
+     0.026,
+     0.036,
+     0.035,
+     0.029
+    ],
+    "runs_per_seed": 1000
+   },
+   {
+    "layout": "Kern + Seitengruppe",
+    "weights": "gleich",
+    "n": 100,
+    "mean": 0.014375,
+    "std": 0.004098399077688751,
+    "per_seed": [
+     0.0075,
+     0.015,
+     0.0175,
+     0.0175
+    ],
+    "runs_per_seed": 400
+   },
+   {
+    "layout": "Kern + Seitengruppe",
+    "weights": "lognormal 0,5",
+    "n": 3,
+    "mean": 0.713125,
+    "std": 0.0022810359488618093,
+    "per_seed": [
+     0.7105,
+     0.71575,
+     0.715,
+     0.71125
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Kern + Seitengruppe",
+    "weights": "lognormal 0,5",
+    "n": 5,
+    "mean": 0.42937499999999995,
+    "std": 0.0014197270864500832,
+    "per_seed": [
+     0.43025,
+     0.428,
+     0.43125,
+     0.428
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Kern + Seitengruppe",
+    "weights": "lognormal 0,5",
+    "n": 10,
+    "mean": 0.19956250000000003,
+    "std": 0.008371034508948097,
+    "per_seed": [
+     0.1915,
+     0.2065,
+     0.20925,
+     0.191
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Kern + Seitengruppe",
+    "weights": "lognormal 0,5",
+    "n": 20,
+    "mean": 0.0970625,
+    "std": 0.0021387423290335863,
+    "per_seed": [
+     0.0945,
+     0.0955,
+     0.0985,
+     0.09975
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Kern + Seitengruppe",
+    "weights": "lognormal 0,5",
+    "n": 30,
+    "mean": 0.063125,
+    "std": 0.004102209770355486,
+    "per_seed": [
+     0.06775,
+     0.0565,
+     0.06425,
+     0.064
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Kern + Seitengruppe",
+    "weights": "lognormal 0,5",
+    "n": 50,
+    "mean": 0.044000000000000004,
+    "std": 0.007348469228349535,
+    "per_seed": [
+     0.054,
+     0.048,
+     0.038,
+     0.036
+    ],
+    "runs_per_seed": 1000
+   },
+   {
+    "layout": "Kern + Seitengruppe",
+    "weights": "lognormal 0,5",
+    "n": 100,
+    "mean": 0.020624999999999998,
+    "std": 0.0064650502704928755,
+    "per_seed": [
+     0.01,
+     0.0225,
+     0.0275,
+     0.0225
+    ],
+    "runs_per_seed": 400
+   },
+   {
+    "layout": "Kern + Seitengruppe",
+    "weights": "lognormal 1",
+    "n": 3,
+    "mean": 0.877,
+    "std": 0.0028228974476590405,
+    "per_seed": [
+     0.879,
+     0.8725,
+     0.87975,
+     0.87675
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Kern + Seitengruppe",
+    "weights": "lognormal 1",
+    "n": 5,
+    "mean": 0.6586875,
+    "std": 0.0020491995388443782,
+    "per_seed": [
+     0.66025,
+     0.659,
+     0.66025,
+     0.65525
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Kern + Seitengruppe",
+    "weights": "lognormal 1",
+    "n": 10,
+    "mean": 0.3878125,
+    "std": 0.008279068108790984,
+    "per_seed": [
+     0.39,
+     0.3945,
+     0.37375,
+     0.393
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Kern + Seitengruppe",
+    "weights": "lognormal 1",
+    "n": 20,
+    "mean": 0.2035,
+    "std": 0.002417384950726706,
+    "per_seed": [
+     0.202,
+     0.2075,
+     0.20325,
+     0.20125
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Kern + Seitengruppe",
+    "weights": "lognormal 1",
+    "n": 30,
+    "mean": 0.1365,
+    "std": 0.004626688880830432,
+    "per_seed": [
+     0.135,
+     0.13925,
+     0.12975,
+     0.142
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "layout": "Kern + Seitengruppe",
+    "weights": "lognormal 1",
+    "n": 50,
+    "mean": 0.07250000000000001,
+    "std": 0.004499999999999998,
+    "per_seed": [
+     0.065,
+     0.073,
+     0.076,
+     0.076
+    ],
+    "runs_per_seed": 1000
+   },
+   {
+    "layout": "Kern + Seitengruppe",
+    "weights": "lognormal 1",
+    "n": 100,
+    "mean": 0.041875,
+    "std": 0.009249155366842964,
+    "per_seed": [
+     0.035,
+     0.035,
+     0.04,
+     0.0575
+    ],
+    "runs_per_seed": 400
+   }
+  ],
+  "big": [
+   {
+    "share": 5,
+    "mean": 0.0039375,
+    "std": 0.00032475952641916465,
+    "per_seed": [
+     0.00425,
+     0.00375,
+     0.0035,
+     0.00425
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "share": 10,
+    "mean": 0.014875,
+    "std": 0.0011524430571616113,
+    "per_seed": [
+     0.015,
+     0.0165,
+     0.01325,
+     0.01475
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "share": 20,
+    "mean": 0.07100000000000001,
+    "std": 0.003933033180638066,
+    "per_seed": [
+     0.065,
+     0.07325,
+     0.0755,
+     0.07025
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "share": 30,
+    "mean": 0.21962500000000001,
+    "std": 0.007111829933287219,
+    "per_seed": [
+     0.22975,
+     0.215,
+     0.2225,
+     0.21125
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "share": 40,
+    "mean": 0.5214375,
+    "std": 0.0072162468603838605,
+    "per_seed": [
+     0.5245,
+     0.509,
+     0.5265,
+     0.52575
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "share": 50,
+    "mean": 1.0,
+    "std": 0.0,
+    "per_seed": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "runs_per_seed": 4000
+   },
+   {
+    "share": 60,
+    "mean": 1.0,
+    "std": 0.0,
+    "per_seed": [
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "runs_per_seed": 4000
+   }
+  ],
+  "triangles": {
+   "Normal": {
+    "mean": 0.43800500000000003,
+    "std": 0.0008948044479102621,
+    "runs_per_seed": 100000
+   },
+   "Quadrat": {
+    "mean": 0.40020750000000005,
+    "std": 0.0018643279620281486,
+    "runs_per_seed": 100000
+   },
+   "torricelli": {
+    "instances": 2000,
+    "max_distance": 3.784022554902696e-10,
+    "worse_objective": 0
+   }
+  }
+ },
+ "m3": {
+  "factors": [
+   {
+    "f": 0.5,
+    "instances": 96,
+    "median": 54.5,
+    "p95": 403.75,
+    "max": 1868,
+    "share_maxit": 0.0,
+    "median_error_at_stop": 2.26154331551943e-09
+   },
+   {
+    "f": 0.9,
+    "instances": 96,
+    "median": 153.5,
+    "p95": 200.25,
+    "max": 239,
+    "share_maxit": 0.0,
+    "median_error_at_stop": 8.570720893913787e-09
+   },
+   {
+    "f": 0.99,
+    "instances": 96,
+    "median": 1240.5,
+    "p95": 1400.0,
+    "max": 1575,
+    "share_maxit": 0.0,
+    "median_error_at_stop": 9.850877590801194e-08
+   },
+   {
+    "f": 0.999,
+    "instances": 96,
+    "median": 8027.5,
+    "p95": 9949.5,
+    "max": 11009,
+    "share_maxit": 0.0,
+    "median_error_at_stop": 9.968979520229414e-07
+   },
+   {
+    "f": 1.0,
+    "instances": 96,
+    "median": 55970.5,
+    "p95": 100000.0,
+    "max": 100000,
+    "share_maxit": 0.19791666666666666,
+    "median_error_at_stop": 5.5981495815884556e-05
+   },
+   {
+    "f": 1.001,
+    "instances": 96,
+    "median": 8049.5,
+    "p95": 10023.5,
+    "max": 11179,
+    "share_maxit": 0.0,
+    "median_error_at_stop": 9.991649653121829e-07
+   },
+   {
+    "f": 1.01,
+    "instances": 96,
+    "median": 1267.5,
+    "p95": 1457.25,
+    "max": 1565,
+    "share_maxit": 0.0,
+    "median_error_at_stop": 9.943983310441159e-08
+   },
+   {
+    "f": 1.1,
+    "instances": 96,
+    "median": 179.0,
+    "p95": 194.0,
+    "max": 202,
+    "share_maxit": 0.0,
+    "median_error_at_stop": 9.53927786539139e-09
+   },
+   {
+    "f": 1.5,
+    "instances": 96,
+    "median": 49.0,
+    "p95": 51.0,
+    "max": 52,
+    "share_maxit": 0.0,
+    "median_error_at_stop": 1.5996087134604634e-09
+   },
+   {
+    "f": 3.0,
+    "instances": 96,
+    "median": 19.0,
+    "p95": 20.0,
+    "max": 20,
+    "share_maxit": 0.0,
+    "median_error_at_stop": 2.5710045739982646e-10
+   }
+  ],
+  "rate": [
+   {
+    "f": 0.5,
+    "instances": 24,
+    "quotient": {
+     "10": 0.718429697459795,
+     "100": 0.8855300742613943,
+     "1000": null,
+     "10000": null
+    },
+    "valid": {
+     "10": 24,
+     "100": 4,
+     "1000": 0,
+     "10000": 0
+    },
+    "slope_1000_10000": null,
+    "median_error": {
+     "10": 0.0037970033463548495,
+     "100": 1.6387652024928005e-13,
+     "1000": 2.0913117231672253e-13,
+     "10000": 2.0913117231672253e-13
+    }
+   },
+   {
+    "f": 1.0,
+    "instances": 24,
+    "quotient": {
+     "10": 0.9325003475699849,
+     "100": 0.9905220272215831,
+     "1000": 0.9990063757422686,
+     "10000": 0.9999000774558999
+    },
+    "valid": {
+     "10": 24,
+     "100": 24,
+     "1000": 24,
+     "10000": 24
+    },
+    "slope_1000_10000": -0.9977100701729837,
+    "median_error": {
+     "10": 0.208243761518045,
+     "100": 0.03233043765036682,
+     "1000": 0.003382163634945215,
+     "10000": 0.0003380161344801089
+    }
+   },
+   {
+    "f": 1.5,
+    "instances": 24,
+    "quotient": {
+     "10": 0.6667830996249962,
+     "100": null,
+     "1000": null,
+     "10000": null
+    },
+    "valid": {
+     "10": 24,
+     "100": 0,
+     "1000": 0,
+     "10000": 0
+    },
+    "slope_1000_10000": null,
+    "median_error": {
+     "10": 0.011119834302599224,
+     "100": 4.163336342344337e-17,
+     "1000": 4.163336342344337e-17,
+     "10000": 4.163336342344337e-17
+    }
+   }
+  ],
+  "random": [
+   {
+    "n": 3,
+    "instances": 2000,
+    "median": 48.0,
+    "p95": 284.14999999999986,
+    "max": 10000
+   },
+   {
+    "n": 5,
+    "instances": 2000,
+    "median": 56.0,
+    "p95": 276.0,
+    "max": 9275
+   },
+   {
+    "n": 10,
+    "instances": 2000,
+    "median": 48.0,
+    "p95": 167.04999999999995,
+    "max": 3797
+   },
+   {
+    "n": 30,
+    "instances": 2000,
+    "median": 36.0,
+    "p95": 71.0,
+    "max": 1137
+   },
+   {
+    "n": 100,
+    "instances": 2000,
+    "median": 31.0,
+    "p95": 41.0,
+    "max": 695
+   }
+  ]
+ },
+ "m4": {
+  "units": [
+   {
+    "s": 1.5,
+    "instances": 600,
+    "geo_mean": 0.02924228205145709,
+    "geo_std": 0.01609708765059467,
+    "coord_max": 2.220446049250313e-16,
+    "excess_mean": 0.03230805593033752,
+    "excess_max": 0.19028169919304022
+   },
+   {
+    "s": 2.0,
+    "instances": 600,
+    "geo_mean": 0.05991551407648115,
+    "geo_std": 0.03330482213369689,
+    "coord_max": 0.0,
+    "excess_mean": 0.09823145365921251,
+    "excess_max": 0.624594512259035
+   },
+   {
+    "s": 5.0,
+    "instances": 600,
+    "geo_mean": 0.2529763962168347,
+    "geo_std": 0.1574092596965908,
+    "coord_max": 8.881784197001252e-16,
+    "excess_mean": 0.46115640250224177,
+    "excess_max": 2.5311016917261453,
+    "tukey_max": 1.1102230246251565e-16,
+    "tukey_runs": 60
+   },
+   {
+    "s": 10.0,
+    "instances": 600,
+    "geo_mean": 0.5776161938775104,
+    "geo_std": 0.3894192824143065,
+    "coord_max": 1.7763568394002505e-15,
+    "excess_mean": 0.705121213834338,
+    "excess_max": 3.824232295274502
+   }
+  ],
+  "rotation": {
+   "angle": 45.0,
+   "instances": 600,
+   "geo_max": 2.1458070479077805e-15,
+   "coord_mean": 0.1571010461719273,
+   "coord_max": 0.45494656615407675,
+   "mean_max": 3.9821592652136533e-16
+  }
+ },
+ "m5": {
+  "A": {
+   "1000": [
+    {
+     "case": "A",
+     "d": 2,
+     "n": 1000,
+     "n_mode": "1000",
+     "runs": 40,
+     "eps": 0.1,
+     "mittel": 0.7064178013533726,
+     "koordinatenmedian": 0.2043851344679834,
+     "geometrischer_median": 0.18035875953206118,
+     "filter": 0.04065445658381349,
+     "se_geo": 0.00540262697455728,
+     "quotient_geo": 1.275329019115143
+    },
+    {
+     "case": "A",
+     "d": 5,
+     "n": 1000,
+     "n_mode": "1000",
+     "runs": 40,
+     "eps": 0.1,
+     "mittel": 1.1215627535669974,
+     "koordinatenmedian": 0.3253038200013244,
+     "geometrischer_median": 0.2729651714068032,
+     "filter": 0.0709632198771836,
+     "se_geo": 0.00472505784907931,
+     "quotient_geo": 1.2207373575109877
+    },
+    {
+     "case": "A",
+     "d": 10,
+     "n": 1000,
+     "n_mode": "1000",
+     "runs": 40,
+     "eps": 0.1,
+     "mittel": 1.5772893403760588,
+     "koordinatenmedian": 0.4575138153799709,
+     "geometrischer_median": 0.3688648588391942,
+     "filter": 0.10310954217365546,
+     "se_geo": 0.005395838589109663,
+     "quotient_geo": 1.1664531027283462
+    },
+    {
+     "case": "A",
+     "d": 20,
+     "n": 1000,
+     "n_mode": "1000",
+     "runs": 40,
+     "eps": 0.1,
+     "mittel": 2.2355689194858677,
+     "koordinatenmedian": 0.6396017208195002,
+     "geometrischer_median": 0.5187474884556634,
+     "filter": 0.14737057948940693,
+     "se_geo": 0.004901488514519801,
+     "quotient_geo": 1.1599546473441507
+    },
+    {
+     "case": "A",
+     "d": 50,
+     "n": 1000,
+     "n_mode": "1000",
+     "runs": 40,
+     "eps": 0.1,
+     "mittel": 3.5490139531785636,
+     "koordinatenmedian": 1.037353871706674,
+     "geometrischer_median": 0.8302973776789371,
+     "filter": 0.2623571192138626,
+     "se_geo": 0.0054916561731437885,
+     "quotient_geo": 1.1742178123163687
+    },
+    {
+     "case": "A",
+     "d": 100,
+     "n": 1000,
+     "n_mode": "1000",
+     "runs": 40,
+     "eps": 0.1,
+     "mittel": 5.013261787519212,
+     "koordinatenmedian": 1.456755142843696,
+     "geometrischer_median": 1.1657022511028805,
+     "filter": 0.38371948516302745,
+     "se_geo": 0.00497736943910767,
+     "quotient_geo": 1.1657022511028805
+    },
+    {
+     "case": "A",
+     "d": 200,
+     "n": 1000,
+     "n_mode": "1000",
+     "runs": 40,
+     "eps": 0.1,
+     "mittel": 7.07977349237387,
+     "koordinatenmedian": 2.049519595240633,
+     "geometrischer_median": 1.6345941559600459,
+     "filter": 0.5418041888999495,
+     "se_geo": 0.0053844931720206865,
+     "quotient_geo": 1.1558326121672493
+    }
+   ],
+   "20d": [
+    {
+     "case": "A",
+     "d": 2,
+     "n": 200,
+     "n_mode": "20d",
+     "runs": 40,
+     "eps": 0.1,
+     "mittel": 0.7173884343647207,
+     "koordinatenmedian": 0.21188867426249197,
+     "geometrischer_median": 0.20220224844775575,
+     "filter": 0.11162846045246282,
+     "se_geo": 0.010281223038123228,
+     "quotient_geo": 1.4297858104857513
+    },
+    {
+     "case": "A",
+     "d": 5,
+     "n": 200,
+     "n_mode": "20d",
+     "runs": 40,
+     "eps": 0.1,
+     "mittel": 1.1168225823287976,
+     "koordinatenmedian": 0.3550480868678626,
+     "geometrischer_median": 0.28747500057292774,
+     "filter": 0.15141336372068923,
+     "se_geo": 0.011840005151852776,
+     "quotient_geo": 1.2856272862257148
+    },
+    {
+     "case": "A",
+     "d": 10,
+     "n": 200,
+     "n_mode": "20d",
+     "runs": 40,
+     "eps": 0.1,
+     "mittel": 1.6031513548927723,
+     "koordinatenmedian": 0.5368208525416571,
+     "geometrischer_median": 0.4369949559614591,
+     "filter": 0.24445821781799282,
+     "se_geo": 0.012366784732187198,
+     "quotient_geo": 1.3818993868431866
+    },
+    {
+     "case": "A",
+     "d": 20,
+     "n": 400,
+     "n_mode": "20d",
+     "runs": 40,
+     "eps": 0.1,
+     "mittel": 2.2521525017381885,
+     "koordinatenmedian": 0.6974591579665207,
+     "geometrischer_median": 0.561521333803278,
+     "filter": 0.23644595459925113,
+     "se_geo": 0.008552204742022855,
+     "quotient_geo": 1.2555998732004798
+    },
+    {
+     "case": "A",
+     "d": 50,
+     "n": 1000,
+     "n_mode": "20d",
+     "runs": 40,
+     "eps": 0.1,
+     "mittel": 3.540689555951488,
+     "koordinatenmedian": 1.0297993228493005,
+     "geometrischer_median": 0.8211217753495074,
+     "filter": 0.2560074297338284,
+     "se_geo": 0.004436526780803964,
+     "quotient_geo": 1.161241551059147
+    },
+    {
+     "case": "A",
+     "d": 100,
+     "n": 2000,
+     "n_mode": "20d",
+     "runs": 40,
+     "eps": 0.1,
+     "mittel": 5.00868670473983,
+     "koordinatenmedian": 1.4335011171418965,
+     "geometrischer_median": 1.1435742188262625,
+     "filter": 0.27771940046623067,
+     "se_geo": 0.0039252191850286024,
+     "quotient_geo": 1.1435742188262625
+    },
+    {
+     "case": "A",
+     "d": 200,
+     "n": 4000,
+     "n_mode": "20d",
+     "runs": 40,
+     "eps": 0.1,
+     "mittel": 7.076299863175666,
+     "koordinatenmedian": 1.9997150585702272,
+     "geometrischer_median": 1.5937761623731042,
+     "filter": 0.27351878905865246,
+     "se_geo": 0.002407334884529411,
+     "quotient_geo": 1.126969932107494
+    }
+   ]
+  },
+  "B": {
+   "1000": [
+    {
+     "case": "B",
+     "d": 2,
+     "n": 1000,
+     "n_mode": "1000",
+     "runs": 40,
+     "eps": 0.1,
+     "mittel": 0.3023508594568523,
+     "koordinatenmedian": 0.2050251537039313,
+     "geometrischer_median": 0.1789453902418246,
+     "filter": 0.15707563922277762,
+     "se_geo": 0.005680218803491746,
+     "quotient_geo": 1.265334989020672
+    },
+    {
+     "case": "B",
+     "d": 5,
+     "n": 1000,
+     "n_mode": "1000",
+     "runs": 40,
+     "eps": 0.1,
+     "mittel": 0.2987658610531175,
+     "koordinatenmedian": 0.31242186812065975,
+     "geometrischer_median": 0.2458552193928285,
+     "filter": 0.15070749410962297,
+     "se_geo": 0.004740801696379407,
+     "quotient_geo": 1.099497966370978
+    },
+    {
+     "case": "B",
+     "d": 10,
+     "n": 1000,
+     "n_mode": "1000",
+     "runs": 40,
+     "eps": 0.1,
+     "mittel": 0.3056007988943815,
+     "koordinatenmedian": 0.4084956073759181,
+     "geometrischer_median": 0.3168411800304608,
+     "filter": 0.17050280777479063,
+     "se_geo": 0.0057562315460648605,
+     "quotient_geo": 1.0019397854317136
+    },
+    {
+     "case": "B",
+     "d": 20,
+     "n": 1000,
+     "n_mode": "1000",
+     "runs": 40,
+     "eps": 0.1,
+     "mittel": 0.3272442374026931,
+     "koordinatenmedian": 0.4912924273061,
+     "geometrischer_median": 0.4060911775696094,
+     "filter": 0.2077818541293818,
+     "se_geo": 0.005468785405349083,
+     "quotient_geo": 0.9080474781085843
+    },
+    {
+     "case": "B",
+     "d": 50,
+     "n": 1000,
+     "n_mode": "1000",
+     "runs": 40,
+     "eps": 0.1,
+     "mittel": 0.3719326010021651,
+     "koordinatenmedian": 0.5766067616168987,
+     "geometrischer_median": 0.508648872284546,
+     "filter": 0.31605606704724754,
+     "se_geo": 0.004237831543896969,
+     "quotient_geo": 0.7193381336705852
+    },
+    {
+     "case": "B",
+     "d": 100,
+     "n": 1000,
+     "n_mode": "1000",
+     "runs": 40,
+     "eps": 0.1,
+     "mittel": 0.43254330213481146,
+     "koordinatenmedian": 0.6454260044063195,
+     "geometrischer_median": 0.5825597626208494,
+     "filter": 0.5318175995508742,
+     "se_geo": 0.0030266036523186345,
+     "quotient_geo": 0.5825597626208494
+    },
+    {
+     "case": "B",
+     "d": 200,
+     "n": 1000,
+     "n_mode": "1000",
+     "runs": 40,
+     "eps": 0.1,
+     "mittel": 0.525568176948797,
+     "koordinatenmedian": 0.7429950969475281,
+     "geometrischer_median": 0.6656665773032928,
+     "filter": 0.7058804400106528,
+     "se_geo": 0.004478378055545845,
+     "quotient_geo": 0.4706973508203975
+    }
+   ],
+   "20d": [
+    {
+     "case": "B",
+     "d": 2,
+     "n": 200,
+     "n_mode": "20d",
+     "runs": 40,
+     "eps": 0.1,
+     "mittel": 0.3054645983555586,
+     "koordinatenmedian": 0.2170696426359641,
+     "geometrischer_median": 0.18898783547934422,
+     "filter": 0.16900645871518433,
+     "se_geo": 0.010526920107598713,
+     "quotient_geo": 1.3363458002921187
+    },
+    {
+     "case": "B",
+     "d": 5,
+     "n": 200,
+     "n_mode": "20d",
+     "runs": 40,
+     "eps": 0.1,
+     "mittel": 0.3200686007952605,
+     "koordinatenmedian": 0.33703018632443005,
+     "geometrischer_median": 0.27071212173342013,
+     "filter": 0.20738692746986365,
+     "se_geo": 0.013322560104960605,
+     "quotient_geo": 1.2106614130582511
+    },
+    {
+     "case": "B",
+     "d": 10,
+     "n": 200,
+     "n_mode": "20d",
+     "runs": 40,
+     "eps": 0.1,
+     "mittel": 0.36022867314395735,
+     "koordinatenmedian": 0.4772394306626154,
+     "geometrischer_median": 0.37435440154219235,
+     "filter": 0.28622841160086876,
+     "se_geo": 0.011418464798703863,
+     "quotient_geo": 1.1838125609825778
+    },
+    {
+     "case": "B",
+     "d": 20,
+     "n": 400,
+     "n_mode": "20d",
+     "runs": 40,
+     "eps": 0.1,
+     "mittel": 0.36537151344366353,
+     "koordinatenmedian": 0.5291008158265814,
+     "geometrischer_median": 0.43520720253292966,
+     "filter": 0.29083991475717347,
+     "se_geo": 0.007696274832717905,
+     "quotient_geo": 0.9731528891611493
+    },
+    {
+     "case": "B",
+     "d": 50,
+     "n": 1000,
+     "n_mode": "20d",
+     "runs": 40,
+     "eps": 0.1,
+     "mittel": 0.37316697964542456,
+     "koordinatenmedian": 0.5819123657336555,
+     "geometrischer_median": 0.5102477159148393,
+     "filter": 0.33025772600324454,
+     "se_geo": 0.00526869808581331,
+     "quotient_geo": 0.7215992400166599
+    },
+    {
+     "case": "B",
+     "d": 100,
+     "n": 2000,
+     "n_mode": "20d",
+     "runs": 40,
+     "eps": 0.1,
+     "mittel": 0.3676022174428669,
+     "koordinatenmedian": 0.5843573140095794,
+     "geometrischer_median": 0.5374713508777491,
+     "filter": 0.3649364799444661,
+     "se_geo": 0.00315234529963402,
+     "quotient_geo": 0.5374713508777491
+    },
+    {
+     "case": "B",
+     "d": 200,
+     "n": 4000,
+     "n_mode": "20d",
+     "runs": 40,
+     "eps": 0.1,
+     "mittel": 0.36929554154146016,
+     "koordinatenmedian": 0.5957188649662077,
+     "geometrischer_median": 0.5600305883993055,
+     "filter": 0.40750650377934167,
+     "se_geo": 0.0017797167049150458,
+     "quotient_geo": 0.39600142672904115
+    }
+   ]
+  }
+ },
+ "m6": {
+  "rows": [
+   {
+    "n": 3,
+    "instances": 2000,
+    "abort": 1.0,
+    "classic_wrong": 0.5655,
+    "guard_wrong": 0.5655,
+    "vz_wrong": 0.0,
+    "centroid_classic_wrong": 0.0
+   },
+   {
+    "n": 5,
+    "instances": 2000,
+    "abort": 1.0,
+    "classic_wrong": 0.7445,
+    "guard_wrong": 0.7445,
+    "vz_wrong": 0.0,
+    "centroid_classic_wrong": 0.0
+   },
+   {
+    "n": 10,
+    "instances": 2000,
+    "abort": 1.0,
+    "classic_wrong": 0.877,
+    "guard_wrong": 0.877,
+    "vz_wrong": 0.0,
+    "centroid_classic_wrong": 0.0
+   },
+   {
+    "n": 30,
+    "instances": 2000,
+    "abort": 1.0,
+    "classic_wrong": 0.968,
+    "guard_wrong": 0.968,
+    "vz_wrong": 0.0,
+    "centroid_classic_wrong": 0.0
+   }
+  ]
+ }
+}
