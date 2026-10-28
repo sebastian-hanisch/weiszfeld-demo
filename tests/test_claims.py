@@ -110,8 +110,19 @@ def test_h7_h8_and_the_e5_table():
     assert max(u[s]["coord_max"] for s in u) < 2e-15 and u[5.0]["tukey_max"] < 2e-15 and u[5.0]["tukey_runs"] == 60
     has("Abweichung höchstens 2·10⁻¹⁵")
     rot = R.rotation()
-    has(f"{de(rot['coord_mean'], 2)} Streuungen (größter Fall {de(rot['coord_max'], 2)}); geometrischer Median 2·10⁻¹⁵")
+    has(f"{de(rot['coord_mean'], 2)} Streuungen (größter Fall {de(rot['coord_max'], 2)}; 600 Instanzen, 150 je Zufalls-Seed bei vier Zufalls-Seeds); geometrischer Median 2·10⁻¹⁵")
     assert 1.5e-15 <= rot["geo_max"] < 2.5e-15 and rot["angle"] == 45.0
+    import inspect
+
+    import wsz_constants as C
+    import wsz_experiments as X
+    per_seed = inspect.signature(X.rotation_study).parameters["per_seed"].default
+    assert per_seed == 150 and len(C.SEEDS) == 4 and rot["instances"] == per_seed * len(C.SEEDS) == 600
+    # Epsilon-Schutz: Löser-Dropdown und E4 mit 1e-12, E3 mit 1e-15 (Iterationen) bzw. 1e-18 (Fehlerkurve), wie in der README genannt
+    src_eval = (Path(X.__file__).parent / "wsz_evaluation.py").read_text(encoding="utf-8")
+    src_x = Path(X.__file__).read_text(encoding="utf-8")
+    assert "guard=1e-12" in src_eval and "guard=1e-12" in src_x and "guard=1e-15" in src_x and "guard=1e-18" in src_x
+    has("Der Löser-Dropdown und E4 verwenden diese Grenze 10⁻¹²; E3 rechnet mit dem klassischen Verfahren und Epsilon-Schutz 10⁻¹⁵ (Zählung der Iterationen) bzw. 10⁻¹⁸ (Fehlerkurve über die Schritte)")
 
 
 def test_h9_h10_and_the_e6_table():

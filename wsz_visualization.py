@@ -119,7 +119,7 @@ def build_big_chart(rows: list[dict]) -> go.Figure:
 def build_iterations_chart(rows: list[dict]) -> go.Figure:
     fig = go.Figure(go.Scatter(x=[r["f"] for r in rows], y=[r["median"] for r in rows], mode="lines+markers", line=dict(color=C.COLOR_PATH), name="Median der Iterationen"))
     fig.add_trace(go.Scatter(x=[r["f"] for r in rows], y=[r["p95"] for r in rows], mode="lines+markers", line=dict(color=C.COLOR_PULL, dash="dot"), name="95. Perzentil"))
-    _base(fig, 380, "Gewicht des Kunden 0 in Vielfachen der Schwelle (f)", "Iterationen bis Schritt < 1e-9")
+    _base(fig, 380, "Gewicht des Kunden 1 in Vielfachen der Schwelle (f)", "Iterationen bis Schritt < 1e-9")
     fig.update_xaxes(type="log")
     fig.update_yaxes(type="log")
     return fig

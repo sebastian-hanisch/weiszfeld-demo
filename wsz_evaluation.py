@@ -194,7 +194,7 @@ def verdict_e3(rows: list[dict]) -> tuple[str, str]:
 def verdict_e4(row: dict) -> tuple[str, str]:
     """E4: Start auf dem Kunden, der dem Schwerpunkt am nächsten liegt."""
     return "error", (f"Bei n = {row['n']} bricht das klassische Verfahren vom Start auf einem Kunden in **{pct(row['abort'], 0)} %** der {row['instances']} Instanzen ab; in "
-                     f"{pct(row['classic_wrong'], 1)} % ist das Ergebnis nicht optimal. Die Epsilon-Absicherung ändert daran nichts ({pct(row['guard_wrong'], 1)} %), "
+                     f"{pct(row['classic_wrong'], 1)} % ist das Ergebnis nicht optimal. Die Epsilon-Absicherung (Abstand nach unten begrenzt) ändert daran nichts ({pct(row['guard_wrong'], 1)} %), "
                      f"Vardi–Zhang liegt in {pct(row['vz_wrong'], 1)} % daneben.")
 
 

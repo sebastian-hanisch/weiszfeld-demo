@@ -72,13 +72,26 @@ with st.container(key="kopf"):
 st.markdown(
     """
 **Stück 5 der Reihe „Mittelwerte und Lagemaße“.** Ein Lager soll gewichtete Kunden (Gewicht = Sendungsmenge) in der Ebene bedienen, und der **Gesamtweg** (Summe aus Gewicht mal Luftlinie) soll möglichst kurz sein:
-Das ist der **geometrische Median**, in der Standortplanung der **Weber-Punkt**. Anders als Mittelwert und Koordinatenmedian hat er keine Formel; das **Weiszfeld-Verfahren** nähert ihn Schritt für Schritt an.
-Die Demo zeigt, **wo der Punkt steht** (oft genau auf einem Kunden), **wann der Algorithmus dort stolpert** und warum **Achseneinheiten, Drehung und hohe Dimension** das Bild verändern.
+Das ist der **geometrische Median**, in der Standortplanung der **Weber-Punkt**. Anders als Mittelwert und Koordinatenmedian hat er für allgemeines n keine geschlossene Formel (für drei Punkte gibt es die Torricelli-Konstruktion); das **Weiszfeld-Verfahren** nähert ihn Schritt für Schritt an.
+Die Demo zeigt, **wo der Punkt steht** (oft genau auf einem Kunden), **wann der Algorithmus dort stolpert** und warum **Achseneinheiten, Drehung und hohe Dimension** das Bild verändern. Wer die Idee zuerst ohne Fachbegriffe verstehen will, öffnet „💬 In einfachen Worten“.
 Abgrenzung: Die Standortplanung wählt aus *diskreten* Kandidaten ([standortplanung-demo](https://github.com/sebastian-hanisch/standortplanung-demo)); hier ist der Standort ein *beliebiger* Punkt der Ebene.
 
 Weiter unten: sechs Experimente (**🔬 E1 bis E6**), **🚧 Wo die Annahmen enden** und **📐 Mathematische Formulierung**.
 """
 )
+
+# erklaerseite:einfach:start (erzeugt von tools/set_demo_explainer.py (Website-Repo) aus tools/content/explainers/weiszfeld-erklaert.json, nicht von Hand ändern)
+with st.expander("💬 In einfachen Worten"):
+    st.markdown(
+        """
+Ein Lager soll viele Kunden beliefern, jeder mit einer Sendungsmenge als Gewicht. Gesucht ist der Standort mit dem kürzesten Gesamtweg: der **geometrische Median**, in der Standortplanung der **Weber-Punkt**. Stellen Sie sich einen Ring vor, an dem von jedem Kunden aus ein Seil zieht, umso kräftiger, je größer seine Menge ist. Dort, wo sich die Züge aufheben, ist der Ring am Ziel.
+
+Zieht ein Kunde mindestens so kräftig wie alle anderen zusammen, bleibt der Ring an ihm hängen: Der Standort liegt dann genau auf diesem Kunden. Das übliche Rechenverfahren, das **Weiszfeld-Verfahren**, rückt Schritt für Schritt näher, wird aber ausgerechnet dort langsam, und ein Start auf einem Kunden führt es in die Irre. Die Demo zeigt beides und außerdem, dass der Standort von den Einheiten der Achsen abhängt.
+
+[Ausführlich und verständlich erklärt, mit Fachteil](https://sebastianhanisch.net/weiszfeld-erklaert.html)
+        """
+    )
+# erklaerseite:einfach:end
 
 with st.expander("So funktioniert der geometrische Median", expanded=True):
     st.markdown(
@@ -180,7 +193,7 @@ with st.expander("🧰 Die drei Löser und der tiefste Datenpunkt erklärt"):
 |---|---|---|
 | **Klassisch (Weiszfeld)** | Schwerpunkt mit Gewichten $w_i/d_i$, $d_i$ = Abstand zu Kunde $i$ | Steht ein Iterat exakt auf einem Kunden, ist $d_i = 0$: Abbruch. Nahe der Schwelle sehr viele Schritte. |
 | **Mit Epsilon-Schutz** | Wie klassisch, aber $d_i \ge 10^{-12}$ | Der Kunde zieht den Iterat mit dem Gewicht $w_i/10^{-12}$ an sich: Das Verfahren bleibt dort, meldet „konvergiert“ und liegt oft daneben. |
-| **Vardi–Zhang** | Steht der Iterat auf Kunden mit Gesamtgewicht $\eta$, wird geprüft, ob die Zugkraft der übrigen höchstens $\eta$ ist (dann Optimum); sonst ein gedämpfter Schritt | Bleibt langsam nahe der Schwelle, bricht aber nicht ab und täuscht keine Konvergenz vor. |
+| **Vardi–Zhang** | Steht der Iterat auf Kunden mit Gesamtgewicht $\eta$, wird geprüft, ob die Zugkraft der übrigen höchstens $\eta$ ist (dann Optimum); sonst ein gedämpfter Schritt | Bleibt langsam nahe der Schwelle und bricht nicht ab; das Schrittkriterium bleibt an der Schwelle trotzdem unzuverlässig. |
 | **Tiefster Datenpunkt (Tukey)** | Der Kunde, den die wenigsten Halbebenen „abschneiden“ können (Halbraumtiefe); bei Gleichstand der Schwerpunkt dieser Kunden | Kein Abstandsmaß, daher unabhängig von Einheiten und Drehung; aber ein Datenpunkt, nicht die Mitte der tiefsten Region (die einfache Fassung). |
 
 Der Löser „Vardi–Zhang“ ist hier nach der Beschreibung des Verfahrens umgesetzt (die Originalarbeit wurde nicht eingesehen) und gegen `scipy.optimize` geprüft.
@@ -199,7 +212,7 @@ st.markdown("Gleich gewichtete oder gestreut gewichtete Zufallskunden; getestet 
 st.plotly_chart(build_share_chart(R.raster_rows()), width="stretch", key="e1_chart")
 _verdict(V.verdict_e1(R.raster_cell("Normal", "gleich", 3), R.raster_cell("Normal", "gleich", 100), "Normalverteilt, gleiche Gewichte"))
 _verdict(("info", f"Dreiecke (n = 3): Bei {V.pct(R.triangles()['Normal']['mean'])} % (normalverteilt) bzw. {V.pct(R.triangles()['Quadrat']['mean'])} % (Quadrat) der Dreiecke hat ein Winkel mindestens 120°; dann liegt "
-                  f"der Standort auf dieser Ecke. Sonst findet die Torricelli-Konstruktion den Punkt: Sie weicht in {R.triangles()['torricelli']['instances']} Dreiecken höchstens {R.triangles()['torricelli']['max_distance']:.0e} vom Weiszfeld-Ergebnis ab."))
+                  f"der Standort auf dieser Ecke. Sonst findet die Torricelli-Konstruktion den Punkt: Sie weicht in {R.triangles()['torricelli']['instances']} Dreiecken höchstens {R.triangles()['torricelli']['max_distance']:.0e} vom Ergebnis des Vardi–Zhang-Verfahrens ab."))
 live_kind = weights if weights in ("gleich", "lognormal 0,5", "lognormal 1", "Großkunde") else None
 live_runs = int(max(100, min(1000, C.LIVE_BUDGET // (4 * int(n) * int(n)))))
 if st.button(f"Nachmessen mit Layout „{layout}“, n = {int(n)}, Gewichte „{weights}“ ({live_runs} Instanzen je Seed)", key="e1_live", disabled=live_kind is None):
@@ -220,7 +233,7 @@ _verdict(V.verdict_e2(R.big_rows()))
 
 # E3 ---------------------------------------------------------------------------------------------------------------------------------------
 st.subheader("🔬 E3: Der Algorithmus an der Schwelle")
-st.markdown(f"Sechs normalverteilte Kunden, Kunde 0 hat das Gewicht f mal seine Schwelle (ab f = 1 liegt das Optimum auf ihm), Start im Schwerpunkt, klassisches Verfahren mit Epsilon-Schutz 1e-15, Abbruch bei Schritt < 1e-9, Grenze {X.MAXIT_SERIES} Schritte; {R.factor_rows()[0]['instances']} Instanzen je Zeile.")
+st.markdown(f"Sechs normalverteilte Kunden, Kunde 1 hat das Gewicht f mal seine Schwelle (ab f = 1 liegt das Optimum auf ihm), Start im Schwerpunkt, klassisches Verfahren mit Epsilon-Schutz 1e-15, Abbruch bei Schritt < 1e-9, Grenze {X.MAXIT_SERIES} Schritte; {R.factor_rows()[0]['instances']} Instanzen je Zeile.")
 st.plotly_chart(build_iterations_chart(R.factor_rows()), width="stretch", key="e3_chart")
 st.dataframe(([{"f": r["f"], "Median": r["median"], "95. Perzentil": r["p95"], "größter Wert": r["max"], "Anteil an der Grenze (%)": 100 * r["share_maxit"],
                             "Abstand zum Optimum beim Abbruch, Median (km)": r["median_error_at_stop"]} for r in R.factor_rows()]), hide_index=True, width="stretch",
@@ -327,18 +340,29 @@ st.markdown(
 st.markdown("---")
 
 with st.expander("📐 Mathematische Formulierung"):
+    # erklaerseite:lesehilfe:start (erzeugt von tools/set_demo_explainer.py (Website-Repo) aus tools/content/explainers/weiszfeld-erklaert.json, nicht von Hand ändern)
     st.markdown(
         r"""
-**Lesehilfe.** *Gegeben:* Kunden an Orten $x_1, \dots, x_n$ in der Ebene mit Gewichten $w_i > 0$. *Gesucht:* ein Punkt $c$, der den Gesamtweg minimiert.
+**Lesehilfe.** Gegeben sind Kunden an Orten $x_1, \dots, x_n$ in der Ebene mit Gewichten $w_i > 0$. Gesucht ist ein Punkt $c$, der den Gesamtweg minimiert.
 
 | Symbol | Bedeutung |
 |---|---|
 | $x_i$ | Ort von Kunde $i$ (Kilometer, Luftlinie) |
 | $w_i$ | Gewicht (Sendungsmenge) von Kunde $i$ |
 | $c$ | gesuchter Standort |
+| $F(c)$ | Gesamtweg: Summe aus Gewicht mal Abstand über alle Kunden |
 | $u_{kj}$ | Einheitsvektor von $x_k$ zu $x_j$ |
 | $\eta$ | Gesamtgewicht der Kunden am aktuellen Iterat |
+| $r$ | Norm der Zugkraft der übrigen Kunden auf den Iterat |
+| $T(c)$ | Weiszfeld-Schritt über die Kunden, die nicht an $c$ stehen |
+| $c^{+}$ | neuer Standort nach einem Schritt |
 
+[Schritt für Schritt erklärt, mit Herleitung und Literatur](https://sebastianhanisch.net/weiszfeld-erklaert.html#fachleute)
+        """
+    )
+    # erklaerseite:lesehilfe:end
+    st.markdown(
+        r"""
 **Problem.** Der Gesamtweg ist
 
 $$F(c) = \sum_{i=1}^{n} w_i \,\|x_i - c\|.$$
